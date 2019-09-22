@@ -1,0 +1,262 @@
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #FD5800;
+  user-select: none;
+}
+
+
+a,
+.italic {
+  display: inline;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: url(assets/images/cursor-hover.png) 32 -32, pointer;
+}
+
+.itcontainer {
+  height: 39.825px;
+  width: 73.575px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 20px;
+  margin-bottom:25px;
+  border-radius: 40px;
+  border: 0.5px solid black;
+  text-align: center;
+}
+
+.itcontainer:hover{
+cursor: url(assets/images/cursor-hover.png) 32 -32, pointer;
+background-color: rgba(100,100,100,0.5);
+}
+
+
+.encontainer {
+  height: 39.825px;
+  width: 73.575px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 103.575px;
+  margin-bottom:25px;
+  border-radius: 40px;
+  border: 0.5px solid black;
+  text-align: center;
+  background-color: #000;
+}
+
+.italiano {
+  font-family: arial;
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.inglese {
+  font-family: arial;
+  font-size: 27px;
+  line-height: 40px;
+  color: #FD5800;
+}
+
+
+#clock {
+  font-family: arial;
+  font-size: 30pt;
+  left: 50.4%;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom:20px;
+
+}
+
+
+#home {
+
+font-family: arial;
+text-decoration:underline;
+font-family: arial;
+font-size: 30pt;
+position: absolute;
+bottom: 0px;
+margin-bottom:20px;
+margin-left: 20px;
+}
+
+
+#home:hover {
+  cursor: url(assets/images/cursor-hover.png) 32 -32, pointer;
+  font-style: italic;
+}
+
+
+
+.team {
+  margin-top: 20px;
+}
+
+#ita {
+  font-style: italic;
+}
+
+
+/*COLUMN*/
+
+.colonne {
+font-family: arial;
+font-size: 3vw;
+line-height: 1.2;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+
+}
+
+.colonna1 {
+  float: left;
+
+}
+.colonna2 {
+  position: absolute;
+  left: 50.4%;
+}
+.colonna3 {
+  position: absolute;
+  right: 12.90%;
+  margin-right: 0;
+
+}
+
+.first {
+  line-height: 0.4;
+}
+
+
+.size {
+  font-size: 1.5vw;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+
+.ital {
+  font-style: italic;
+}
+
+sup {
+font-size: 1.5vw;
+}
+
+#obliquo {
+font-style: italic;
+}
+
+
+.ob1:hover {
+font-style: italic;
+}
+.ob2:hover {
+font-style: italic;
+}
+.ob3:hover {
+font-style: italic;
+}
+.ob4:hover {
+font-style: italic;
+}
+
+
+@media(max-width: 560px) {
+
+.itcontainer {
+  height: 33.1875px;
+  width: 61.3125px;
+}
+
+.encontainer {
+  height: 33.1875px;
+  width: 61.3125px;
+  margin-right: 91.3125px;
+}
+
+.italiano {
+  font-size: 22.5px;
+  line-height: 34px;
+}
+
+.inglese {
+  font-size: 22.5px;
+  line-height: 34px;
+}
+}
+
+
+
+
+
+/*mobile versione*/
+
+.size2 {
+  font-size: 3.8vw;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+
+.mobileinfo {
+  display: none;
+  font-family: arial;
+  font-size: 6vw;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 120px;
+}
+
+
+@media(max-width: 850px) {
+.wrapper {
+    display: none;
+  }
+.colonne {
+  display: none;
+}
+.mobileinfo {
+  display: block;
+}
+#clock {
+  display: none;
+}
+html, body {
+  overflow-y: scroll;
+}
+
+.encontainer {
+  position: fixed;
+
+}
+.itcontainer {
+  position: fixed;
+
+}
+#home {
+  position: fixed;
+}
+
+sup {
+font-size: 3vw;
+}
+
+}
