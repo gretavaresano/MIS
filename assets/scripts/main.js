@@ -14,7 +14,7 @@ function checkTime(i) {
   return i;
 }
 
-$(window).on('beforeunload', function(){
+$(window).on('afterunload', function(){
   $(window).scrollTop(0);
   document.body.scrollTop = 0;
  document.documentElement.scrollTop = 0; //
@@ -39,11 +39,7 @@ function checkTime(i) {
   return i;
 }
 
-$(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
-  document.body.scrollTop = 0;
- document.documentElement.scrollTop = 0; //
-});
+
 
 
 startTime2();

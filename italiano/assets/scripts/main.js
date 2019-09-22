@@ -14,11 +14,7 @@ function checkTime(i) {
   return i;
 }
 
-$(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
-  document.body.scrollTop = 0;
- document.documentElement.scrollTop = 0; //
-});
+
 
 
 window.addEventListener("load", startTime2, true);
@@ -39,11 +35,12 @@ function checkTime(i) {
   return i;
 }
 
-$(window).on('beforeunload', function(){
+$(window).on('afterunload', function(){
   $(window).scrollTop(0);
   document.body.scrollTop = 0;
  document.documentElement.scrollTop = 0; //
 });
+
 
 
 startTime2();
