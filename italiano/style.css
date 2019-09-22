@@ -114,11 +114,11 @@ a:hover {
   margin-right: 20px;
   margin-bottom:25px;
   border-radius: 40px;
-  border: 0.5px solid black;
   text-align: center;
+  background-color: #000;
 }
 
-.itcontainer:hover{
+.encontainer:hover{
 cursor: url(assets/images/cursor-hover.png) 32 -32, pointer;
 background-color: rgba(100,100,100,0.5);
 }
@@ -132,22 +132,23 @@ background-color: rgba(100,100,100,0.5);
   margin-right: 103.575px;
   margin-bottom:25px;
   border-radius: 40px;
-  border: 0.5px solid black;
   text-align: center;
-  background-color: #000;
+  border: 0.5px solid black;
+
 }
 
 .italiano {
   font-family: arial;
   font-size: 27px;
   line-height: 40px;
+    color: #fff;
 }
 
 .inglese {
   font-family: arial;
   font-size: 27px;
   line-height: 40px;
-  color: #fff;
+
 }
 
 
