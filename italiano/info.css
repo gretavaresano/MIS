@@ -240,7 +240,7 @@ font-style: italic;
 #clock {
   display: none;
 }
-body {
+html,body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
