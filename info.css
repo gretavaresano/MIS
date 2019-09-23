@@ -222,16 +222,20 @@ font-style: italic;
 /*mobile versione*/
 
 .size2 {
-  font-size: 3.8vw;
+  font-size: 5vw;
   line-height: 1.2;
   display: inline-block;
+}
+
+#size3 {
+  font-size: 8vw;
 }
 
 
 .mobileinfo {
   display: none;
   font-family: arial;
-  font-size: 6vw;
+  font-size: 5vw;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
