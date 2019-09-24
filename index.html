@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MadeinStudio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="icon" type="image/png"
-    href="assets/images/favicon.png">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+var is_opera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+var is_Edge = navigator.userAgent.indexOf("Edge") > -1;
+var is_chrome = !!window.chrome && !is_opera && !is_Edge;
+var is_explorer= typeof document !== 'undefined' && !!document.documentMode && !is_Edge;
+var is_firefox = typeof window.InstallTrigger !== 'undefined';
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90714724-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-90714724-1');
-    </script>
+if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {alert('For a better experience use Chrome or Firefox');}
 
-  </head>
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+window.location = "indexEn.html";
+}
 
-
-  <body onload="startTime()">
-
-
-          <p class="standard">
-            Hello, we are made<span id="obliquo">in</span>studio.<br>
-            We are a multidisciplinary creative studio focused on <span id="obliquo">architecture</span> and <span id="obliquo">visual communication</span> based in Milan.
-            We are architects and graphic designers.
-            Our approach of research, discussion and collaboration helps us to shape ideas and craft meaningful solutions that connect people.
-          </p>
-
-
-    <div class="mouse-container">
-    </div>
-
-
-    <div id="info" onclick="window.location.href = 'info.html';">Info</div>
-    <div id="clock"></div>
-    <script src="assets/scripts/main.js"></script>
-    <script src="assets/scripts/mouse.js"></script>
-
-
-  <div class="encontainer">
-  <div class="inglese">EN</div>
-  </div>
-  <div class="itcontainer" onclick="window.location.href = 'italiano/index.html';">
-  <div class="italiano">IT</div>
-  </div>
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+window.location = "indexEn.html";
+}
 
 
 
-  </body>
+</script>
+</head>
+<body>
+</body>
 </html>

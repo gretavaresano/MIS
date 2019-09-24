@@ -57,8 +57,10 @@ body {
 -o-filter: blur(8px);
 filter: blur(8px);
 z-index: -1;
+}
 
-
+.mousenone {
+  display: none;
 }
 
 
